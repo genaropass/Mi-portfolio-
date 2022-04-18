@@ -15,6 +15,10 @@
 font-family: 'Outfit', sans-serif;
 }
 
+body{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
 /* Header */
 
 .hamburger{
@@ -130,6 +134,9 @@ font-family: 'Outfit', sans-serif;
     margin: auto; 
     text-align: center;
     background-image: url(/img/background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     
 }
 
@@ -417,7 +424,9 @@ font-family: 'Outfit', sans-serif;
     font-weight: 500;
     filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
     font-weight: 600;
+    margin-bottom: 10px;
 }
+
 
 .card-genaro .avatar{
     width: 280px;
@@ -477,12 +486,61 @@ hr{
 }
 
 .port{
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+    
 }
+
+.t1{
+    background-image: url(/img.por/nucbaart.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -210px;
+}
+
+.t2{
+    background-image: url(/img.por/sunnyside.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -210px;
+}
+
+.t3{
+    background-image: url(/img.por/superhero.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -210px;
+}
+
+.t4{
+    background-image: url(/img.por/pokedex.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -120px;
+    
+}
+
+.t5{
+    background-image: url(/img.por/woolfie.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -10px;
+}
+
+.t6{
+    background-image: url(/img.por/snake.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: -90px;
+}
+
 
 .t1, .t2, .t3, .t4, .t5, .t6{
     width: 320px;
-    height: 350px;
+    height: 340px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.526);
     filter:drop-shadow(0 8px 8px rgba(0,0,0,0.2));
@@ -490,29 +548,10 @@ hr{
     text-align: center;
     border-left: 2px solid black;
     border-top: 2px solid black;
-
     border-left: 0.5px solid rgba(255, 255, 255, 0.431);
     border-top: 0.5px solid rgba(255, 255, 255, 0.431);
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     backdrop-filter: blur(5px);
-}
-
-.t1:hover, .t2:hover, .t3:hover, .t4:hover, .t5:hover, .t6:hover{
-    width: 340px;
-    height: 370px;
-    background-color: rgb(255, 255, 255);
-}
-
-
-.proyectos{
-    width: 300px;
-    height: 300px;
-    margin-top: 5px;
-}
-
-.proyectos:hover{
-    width: 330px;
-    height: 310px;
 }
 
 
@@ -522,6 +561,153 @@ hr{
     padding: 10px;
 }
 
+/* Formulario contacto 
+
+.contact_form{  
+    
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: rgba(238, 238, 238, 0.318); 
+  padding-left: 30px; 
+
+    border-left: 1px solid rgba(255, 255, 255, 0.431);
+    border-top: 1px solid rgba(255, 255, 255, 0.431);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.218);
+    backdrop-filter: blur(5px);
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: flex; 
+  justify-content: start;
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #750538; 
+  border-color: #750538; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+button:hover{
+    background-color:#ff0073ce;
+    border-color: #ff0073ce;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-left: 2px solid rgba(255, 255, 255, 0.431);
+    border-top: 2px solid rgba(255, 255, 255, 0.431);
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+
+.aviso{
+  font-size: 13px; 
+  color: #ffffff;  
+}
+
+.formulario h2{
+    font-size: 45px;
+    width: 80%;
+    text-align: center;
+    padding: 30px;
+    background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+
+
+h3{
+    margin: auto;
+  width: 90%;
+  font-size: 18px;
+  text-align: left; 
+  padding-bottom: 30px; 
+  color: white;
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+
+/* FOOTER */
 
 footer{
     background-color: #1e2425;
@@ -534,7 +720,7 @@ footer h6{
     color: white;
     position: relative;
     top: 30px;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
     transition: all 0.3ms ease;
 }
@@ -542,4 +728,230 @@ footer h6{
 footer h6:hover{
     color: #ff0073;
     
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    /* Presentacion section */
+
+.name{
+    background-image: linear-gradient(to right, #881dfb 10%, #ff0073 100%);
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+
+.tarjeta-pre{
+    font-size: 70px;
+    color: white;
+    width: 80%;
+}
+
+.tarjeta-pre p{
+    font-size: 20px;
+}
+
+
+/* About me  */
+
+.about-me{
+    height: 1250px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.about-me h2{
+    font-size: 50px;
+}
+
+.tarjeta{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Portfolio */
+
+
+.porfolio1{
+    width: 100%;
+    height: 1350px;
+}
+
+.porfolio{
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;  
+}
+
+hr{
+    width: 40%;
+    margin: 0px auto 50px auto;
+}
+
+
+.port{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
+    
+}
+
+.container__background{
+    display: none;
+}
+
+.card-genaro{
+    width: 330px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.card-genaro h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card-genaro .avatar{
+    width: 310px;
+    height: 350px;
+
+}
+
+.card-genaro p{
+    padding: 20px 0 5px 0;
+    text-align: center;
+    font-weight: 400;
+    filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
+}
+
+.contenedor-button{
+    margin: 5px auto 15px auto;
+}
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .container__background{
+        display: none;
+    }
+
+    .tarjeta-pre{
+        font-size: 70px;
+        color: white;
+        width: 70%;
+    }
+    
+    .tarjeta-pre p{
+        font-size: 20px;
+    }
+
+
+    /* About me  */
+
+    .about-me{
+        height: 1250px;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 15px;
+        margin: auto;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .about-me h2{
+        font-size: 50px;
+    }
+
+    .tarjeta{
+        width: 70%;
+        margin: auto;
+    }
+
+    #pres{
+        font-size: 16px;
+    }
+
+    .contenedor-button{
+        margin: 5px auto 15px auto;
+    }
+    
+
+    
+    .card-genaro{
+        width: 330px;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .card-genaro h4{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .card-genaro .avatar{
+        width: 310px;
+        height: 350px;
+    }
+
+    .card-genaro p{
+        padding: 20px 0 5px 0;
+        text-align: center;
+        font-weight: 400;
+        filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
+    }
+
+
+    /* Portfolio */
+
+    h2{
+        font-size: 50px;
+        text-align: center;
+        margin: 50px 0 10px 0;
+        padding: 8px;
+        background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+      -webkit-background-clip: text;
+      color: transparent; 
+    }
+    
+    hr{
+        width: 40%;
+        margin: 0px auto 50px auto;
+    }
+    
+
+    .porfolio1{
+        width: 100%;
+        height: 2900px;
+    }
+    
+    .porfolio{
+        grid-gap: 50px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;  
+    }
+
+    .t1, .t2, .t3, .t4, .t5, .t6{
+        width: 380px;
+        height: 410px;
+        border-radius: 10px;
+    }
+
 }
