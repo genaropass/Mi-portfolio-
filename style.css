@@ -606,6 +606,9 @@ input{
   margin-top: 10px;  
   padding-left: 10px;
   margin-bottom: 20px; 
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 
@@ -621,6 +624,9 @@ textarea{
   padding-left: 10px;
   margin-bottom: 20px; 
   padding-top: 15px; 
+  color: black;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 
@@ -684,7 +690,7 @@ span{
     font-size: 14px;
     text-align: center;
     margin: auto;
-    width: 70%;
+    width: 80%;
     text-align: left; 
     padding-bottom: 30px; 
     color: white;
@@ -1033,7 +1039,7 @@ hr{
       }
       
       .formulario h2{
-          font-size: 45px;
+          font-size: 40px;
           width: 80%;
           text-align: center;
           padding: 30px;
@@ -1043,7 +1049,7 @@ hr{
       }
       
       .contact-me{
-          font-size: 16px;
+          font-size: 13px;
           text-align: center;
           margin: auto;
           width: 90%;
