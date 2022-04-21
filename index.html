@@ -7,6 +7,7 @@
     <title>Portfolio Genaro</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -20,6 +21,7 @@
               <li><a href="#presentacion">Home</a></li>
               <li><a href="#about">About me</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#Contact">Contact me</a></li>
               <!-- <li><a href="/index.html">Cv</a></li> -->
             </ul>
         </nav>
@@ -28,29 +30,26 @@
     <section class="presentacion" id="presentacion">
         <div class="tarjeta-pre" >
             <h1>Hi, I´m <span class="name">Genaro</span></h1>
-            <p>Media Designer / FullStack Developer</p>
+            <p class="subtitle">Media Designer / FullStack Developer</p>
             <!-- <a class="btn-pre" href="http://linkedin.com/in/genaro-agustín-pássero-91698b21b" target="_blank" rel="noopener noreferrer">Contact me</a> -->
         </div>
-        
-
     </section>
-    
-    
+
     
     <div class="about-me" id="about" >
         <div class="tarjeta" data-aos="fade-up">
             <h2 >About me</h2>
             <h3>My presentation</h3>
-            <p id="pres">+5 years of experience in multimedia design and web design.
+            <p id="pres">+5 years of experience in multimedia design.
                 Full Stack Development student and UX/UI Designer.
                 <br><br>
                 Passionate about reading and learning new technologies.
                 <br><br>
                 My goal is to be part of a company that allows me to continue growing professionally as a programmer.
                 <br><br>
-                I currently work as a FreeLancer and am starting my own business.
+                I currently work as a FreeLancer and am starting my own business <a class="woolfie" href="https://woolfie.vercel.app/" target="_blank" rel="noopener noreferrer">WOOLFIE</a>.
                 <br><br>
-                Most of my work is open source and publicly available on <a target="_blank" href="https://github.com/genaropass?tab=repositories">GitHub</a>.
+                <!-- Most of my work is open source and publicly available on <a target="_blank" href="https://github.com/genaropass?tab=repositories">GitHub</a>. -->
             </p>
                 <div class="contenedor-button1">
                     <a class="btn-resume1" href="./pdf/Curriculum vitae genaro passero.pdf" target="_blank" rel="noopener noreferrer">Dowload CV <img src="./img/bx-download.svg" alt=""> </a>
@@ -80,11 +79,12 @@
         <hr>
         <div class="porfolio" id="porfolio" data-aos="fade-up">
 
-            <div class="container__background" >
+            <!-- <div class="container__background" >
                 <div class="triangle triangle1"></div>
                 <div class="triangle triangle2"></div>
                 <div class="triangle triangle3"></div>
             </div>
+             -->
             <div class="t1">
                 <a href="https://nucba-art-jvwhm87n9-genaropass.vercel.app/" target="_blank"><span class="port">Nucba Art</span></a>
             </div>
@@ -107,15 +107,13 @@
             </div>
         </div>
     </div>
-    <!--div class="contact_form">
+    <div class="contact_form" id="Contact">
 
         <div class="formulario">      
           <h2>Formulario de contacto</h2>
-            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+            <h3 class="contact-me">Escríbeme y en breve me pondre en contacto</h3>
     
-              <form action="submeter-formulario.php" method="post">       
-    
-                
+              <form  method="post">       
                     <p>
                       <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
@@ -131,12 +129,6 @@
                     </p>
                 
                     <p>
-                      <label for="telefono" class="colocar_telefono">Teléfono
-                      </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>    
-                  
-                    <p>
                       <label for="asunto" class="colocar_asunto">Asunto
                         <span class="obligatorio">*</span>
                       </label>
@@ -147,8 +139,8 @@
                       <label for="mensaje" class="colocar_mensaje">Mensaje
                         <span class="obligatorio">*</span>
                       </label>                     
-                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                    </p>                    
+                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                    </p>                    
                   
                     <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
     
@@ -158,12 +150,13 @@
                 
               </form>
         </div>  
-    </div-->
+    </div>
         
     <hr class="final">
     <footer >
         <h6 >Copyright© 2022 GenPass </h6>
     </footer>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

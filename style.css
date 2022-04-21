@@ -1,22 +1,20 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Outfit:wght@100;200;300;400;600;700;800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     scroll-behavior: smooth;
     color: white;
     text-decoration: none;
     
-font-family: 'Outfit', sans-serif;
 }
 
 body{
     background-image: linear-gradient(to right, #434343 0%, black 100%);
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -120,10 +118,15 @@ body{
   color:#ff0073;
 }
 
+.menuppal ul li a:focus{
+    text-decoration:none;
+    color:#ff0073;
+  }
+  
+
 
 
 /* Presentacion section */
-
 
 .presentacion{
     height: 100vh;
@@ -133,11 +136,11 @@ body{
     align-items: center;
     margin: auto; 
     text-align: center;
-    background-image: url(/img/background1.jpg);
+    background-image: url(/img/Earth-planet-black-background-space_5120x2880.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
+    background-attachment:fixed;
+    background-size: 3000px 1000px;
+    background-color: #0e0e0e;
 }
 
 .name{
@@ -178,10 +181,12 @@ body{
 
 
 .tarjeta-pre p{
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 70px;
-    margin-top: 20px;
-    font-weight: 600;
+    margin-top: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
 }
 
 
@@ -198,7 +203,11 @@ body{
     justify-content: center;
     /* grid-gap: 50px; */
     
-    
+}
+
+.woolfie:hover{
+    color:rgb(147, 28, 62);
+
 }
 
 .tarjeta{
@@ -300,7 +309,7 @@ body{
 
 /* fondo triangulos */
 
-.container__background{
+/* .container__background{
     
     margin: auto;
     position: fixed;
@@ -323,7 +332,6 @@ body{
     right: 100px;
     bottom: 100px;
     animation: t1 ease-in-out 9s infinite;
-    
 }
 
 .triangle2{
@@ -333,7 +341,6 @@ body{
     right: 120px;
     top: 50px;
     animation: t2 ease-out 9s infinite;
-    
 }
 
 .triangle3{
@@ -343,7 +350,6 @@ body{
     left: 200px;
     bottom: 80px;
     animation: t3 ease-in 9s infinite;
-    
 }
 
 @keyframes t1{
@@ -384,7 +390,7 @@ body{
         transform: rotate(45deg) translateY(0px);
     }
 }
-
+ */
 
 
 
@@ -439,9 +445,12 @@ body{
 }
 
 .card-genaro p{
-    padding: 20px 0 10px 0;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 1px 0;
     text-align: center;
     font-weight: 400;
+    color: white;
     filter:drop-shadow(0 8px 8px rgba(0,0,0,0.5));
 }
 
@@ -490,8 +499,13 @@ hr{
     background-color: #ffffff;
     width: 100%;
     border-radius: 5px;
-    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);
-    
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.4);    
+    cursor: pointer;
+}
+
+.port:hover{
+    color: white;
+    background-color: #ff0073;
 }
 
 .t1{
@@ -561,7 +575,7 @@ hr{
     padding: 10px;
 }
 
-/* Formulario contacto 
+ /* Formulario contacto  */
 
 .contact_form{  
     
@@ -666,16 +680,17 @@ span{
   color: transparent; 
 }
 
-
-
-h3{
+.contact-me{
+    font-size: 14px;
+    text-align: center;
     margin: auto;
-  width: 90%;
-  font-size: 18px;
-  text-align: left; 
-  padding-bottom: 30px; 
-  color: white;
+    width: 70%;
+    text-align: left; 
+    padding-bottom: 30px; 
+    color: white;
+    font-weight: 400;
 }
+
 
 
 p{
@@ -704,6 +719,7 @@ p{
   outline:0;
   border: 1px solid #97d848;
 }
+
 
 
 
@@ -895,10 +911,11 @@ hr{
         height: 520px;
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin: 50px auto 50px auto;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
+
     }
     
     .card-genaro h4{
@@ -924,8 +941,8 @@ hr{
     h2{
         font-size: 50px;
         text-align: center;
-        margin: 50px 0 10px 0;
-        padding: 8px;
+        margin: 80px 0 10px 0;
+        padding: 10px;
         background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
       -webkit-background-clip: text;
       color: transparent; 
@@ -939,11 +956,11 @@ hr{
 
     .porfolio1{
         width: 100%;
-        height: 2900px;
+        height: 3050px;
     }
     
     .porfolio{
-        grid-gap: 50px;
+        grid-gap: 80px;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;  
     }
@@ -954,4 +971,88 @@ hr{
         border-radius: 10px;
     }
 
+    /* Formulario */
+
+    .contact_form{  
+    
+        width: 75%;
+        height: auto;
+        margin: 50px auto;
+        border-radius: 10px;  
+        padding-top: 10px;
+        padding-bottom: 20px;  
+        background-color: rgba(238, 238, 238, 0.318); 
+        padding-left: 30px; 
+      
+          border-left: 1px solid rgba(255, 255, 255, 0.431);
+          border-top: 1px solid rgba(255, 255, 255, 0.431);
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.218);
+          backdrop-filter: blur(5px);
+      }
+      
+      
+      input{
+        background-color: #fbfbfb; 
+        width: 90%; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #ab4493; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      
+      
+      textarea{
+        width: 90%; 
+        height: 150px; 
+      }
+      
+      
+      button{
+          width: 90%;
+      }
+      
+      button p{
+        color: #fff; 
+      }
+      
+      
+      span{
+        color: #ab4493; 
+      }
+      
+      
+      .aviso{
+        font-size: 12px;
+        letter-spacing: 2px; 
+        color: #ffffff;  
+        font-family: sans-serif;
+      }
+      
+      .formulario h2{
+          font-size: 45px;
+          width: 80%;
+          text-align: center;
+          padding: 30px;
+          background-image: linear-gradient(to top, #e14fad 0%, #f9d423 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+      }
+      
+      .contact-me{
+          font-size: 16px;
+          text-align: center;
+          margin: auto;
+          width: 90%;
+          text-align: left; 
+          padding-bottom: 30px; 
+          color: white;
+          font-weight: 600;
+      }
+      
+     
+            
 }
